@@ -1,0 +1,38 @@
+############################### Banner ################################
+banner:
+  enable : true
+  bg_image_webp : "images/backgrounds/hero-area.jpg"
+  bg_image : "images/backgrounds/hero-area.jpg"
+  monogramma : "images/backgrounds/monogramma.png"
+  ay_image : "images/ay.png"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "Alexey Yanchenko"
+  content : "Analista Finanziario, Imprenditore, Sviluppatore IT e Trader"
+  about_item :
+   - icon : ti-blackboard # themify icon pack : https://themify.me/themify-icons
+     title : 3 Studi&#58; economista, ingegnere informatico, regista TV/Cinema
+
+   - icon : ti-stats-up # themify icon pack : https://themify.me/themify-icons
+     title : Esperto in Analisi Tecnica e Finanziaria 8 anni
+
+   - icon : ti-bar-chart # themify icon pack : https://themify.me/themify-icons
+     title : Founder e CEO Amy ERP/CRM
+
+   - icon : ti-microphone # themify icon pack : https://themify.me/themify-icons
+     title : Relatore aziendale
+
+   - icon : ti-video-camera # themify icon pack : https://themify.me/themify-icons
+     title : Autore di articoli e video
+
+   - icon : ti-github # themify icon pack : https://themify.me/themify-icons
+     title : Sviluppatore IT 17 anni
+
+   - icon : ti-medall # themify icon pack : https://themify.me/themify-icons
+     title : ex-CIO / Software Architect 3 anni
+
+   - icon : ti-cup # themify icon pack : https://themify.me/themify-icons
+     title : ex-Founder/CEO scambio di criptovalute 1BSE 3 anni
+  button:
+    enable : false
+    label : "Lascia una richiesta di consulenza"
+    link : "#services"

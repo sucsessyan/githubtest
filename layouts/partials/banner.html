@@ -1,0 +1,77 @@
+{{ $data := index site.Data site.Language.Lang }}
+
+{{ if $data.banner.banner.enable }}
+{{ with $data.banner.banner }}
+{{"<!-- Welcome Slider-->" | safeHTML}}
+<section class="hero-area" style='background-image: url("{{ .bg_image_webp | absURL }}")'>
+	<!-- this image is for trigger this section fallback background image -->
+	<img class="d-none" src="{{ .bg_image_webp | absURL }}" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url({{ .bg_image | absURL }})'"/>
+	<div class="block" >
+		<img  style="width:150px; margin-top:50px; margin-left:-400px;"  src="{{ .monogramma | absURL }}" />
+<h1 class="hededesktop">{{ .title | markdownify }}</h1>
+<h1 class="hideforsmartphone">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</h1>
+	<p class="hededesktop">{{ .content | markdownify }}</p>
+{{"<!-- Footer Social Links -->" | safeHTML}}
+<div class="social-icon hideforsmartphone" style="margin-top:320px;" >
+	<ul class="list-inline">
+		{{ range site.Params.social }}
+		<li class="list-inline-item"><a href="{{ .link | safeURL }}" target="_blank"><i class="{{ .icon }}"></i></a></li>
+		{{ end }}
+	</ul>
+</div>
+	</div>
+
+	<div class="block">
+		<div class="social-icon hededesktop" style="margin-top:320px;" >
+			<ul >
+				{{ range site.Params.social }}
+				<li class="list-inline-item"><a href="{{ .link | safeURL }}" target="_blank"><i class="{{ .icon }}"></i></a></li>
+				{{ end }}
+			</ul>
+		</div>
+    <h1 class="hideforsmartphone">{{ .title | markdownify }}</h1>
+		<p class="hideforsmartphone">{{ .content | markdownify }}</p>
+
+		<div style="margin-top:40px;margin-left:150px;" class="hideforsmartphone">
+			{{ range .about_item }}
+			{{"<!-- About item -->" | safeHTML}}
+					<div class="icon-box">
+					</div>
+					{{"<!-- Express About Yourself -->" | safeHTML}}
+<div >
+					<div style="color:white;text-align:left;margin-top:10px;">	{{with .icon}}<i class="ti {{ . }}"></i> {{ end }} 	{{ .title | markdownify }}</div>
+</div>
+
+			{{ end }}
+		</div>
+
+		{{ if .button.enable }}
+		{{ with .button }}
+		<a href="{{ .link }}" data-toggle="modal" data-target="#exampleModal" style="margin-top:20px;" target="{{ .target }}"  class="btn btn-transparent page-scroll">{{ .label }}</a>
+		{{ end }}
+		{{ end }}
+	</div>
+	{{"<!-- Modal -->" | safeHTML}}
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        HI
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+{{"<!-- /Welcome Slider-->" | safeHTML}}
+{{end}}
+{{end}}

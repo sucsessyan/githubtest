@@ -1,0 +1,41 @@
+############################### Banner ################################
+banner:
+  enable : true
+  bg_image_webp : "images/backgrounds/hero-area.jpg"
+  bg_image : "images/backgrounds/hero-area.jpg"
+  monogramma : "images/backgrounds/monogramma.png"
+  ay_image : "images/ay.png"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "Алексей Янченко"
+  content : "Финансовый Аналитик, Предприниматель, IT Девелопер и Трейдер"
+  about_item :
+
+   - icon : ti-blackboard # themify icon pack : https://themify.me/themify-icons
+     title : 3 Образования&#58; Экономист, Инженер IT, Режиссер Кино/ТВ
+
+   - icon : ti-stats-up # themify icon pack : https://themify.me/themify-icons
+     title : Эксперт по Техническому и Финансовому Анализу 8 лет
+
+   - icon : ti-bar-chart # themify icon pack : https://themify.me/themify-icons
+     title : Founder и CEO Amy ERP/CRM
+
+   - icon : ti-microphone # themify icon pack : https://themify.me/themify-icons
+     title : Бизнес-спикер
+
+   - icon : ti-video-camera # themify icon pack : https://themify.me/themify-icons
+     title : Автор статей и видео
+
+   - icon : ti-github # themify icon pack : https://themify.me/themify-icons
+     title : Программист, IT разработчик 17 лет
+
+   - icon : ti-medall # themify icon pack : https://themify.me/themify-icons
+     title : ex-CIO / Software Architect 3 года
+
+   - icon : ti-cup # themify icon pack : https://themify.me/themify-icons
+     title : ex-Founder/CEO криптобиржи 1BSE 3 года
+
+  button:
+    enable : false
+    target: ""
+    label : "Оставить заявку на консультацию"
+    link : "#services"

@@ -1,0 +1,32 @@
+############################### Banner ################################
+consulting:
+  enable : true
+  bg_image_webp : "images/backgrounds/hero-area2.jpg"
+  bg_image : "images/backgrounds/hero-area2.jpg"
+  ay_image : "images/ay.png"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "КОНСУЛЬТАНТ"
+  content : "по инвестициям, трейдингу и финансовому анализу с 2016 года"
+  about_item :
+   - icon : ti-stats-up # themify icon pack : https://themify.me/themify-icons
+     title : Проведу качественный анализ вашего инвестиционного портфеля
+
+   - icon : ti-bar-chart # themify icon pack : https://themify.me/themify-icons
+     title : Технический анализ биржевых инструментов
+
+   - icon : ti-microphone # themify icon pack : https://themify.me/themify-icons
+     title : DUE DILIGENCE любой публичной компании по запросу
+
+   - icon : ti-video-camera # themify icon pack : https://themify.me/themify-icons
+     title : Наставничество и обучение трейдингу и инвестициям
+
+  button:
+    enable : false
+    target: ""
+    label : "Оставить заявку на консультацию"
+    link : "/consulting"
+  button2:
+    enable : false
+    target: ""
+    label : "Пройти тест Какой Вы Инвестор?"
+    link : "#services"

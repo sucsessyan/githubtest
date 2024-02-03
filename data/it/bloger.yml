@@ -1,0 +1,19 @@
+############################### Banner ################################
+bloger:
+  enable : true
+  bg_image_webp : "images/backgrounds/bloger.jpg"
+  bg_image : "images/backgrounds/bloger.jpg"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "AUTORE"
+  content : "articoli e video su economia, commercio e investimenti"
+  contentb: "Iscriviti ai miei canali Instagram e YouTube, dove parlo di trading, economia, finanza, costruzione e gestione di un portafoglio di investimenti. Condivido analisi tecniche, conduco esperimenti finanziari, rispondo a domande e risolvo le tue richieste."
+  button:
+    enable : false
+    target: "_blank"
+    label : "Iscriviti su Instagram"
+    link : "https://instagram.com/mralexyanchenko_eng"
+  button2:
+    enable : true
+    target: "_blank"
+    label : "Iscriviti su YouTube"
+    link : "https://www.youtube.com/@finlikbez"

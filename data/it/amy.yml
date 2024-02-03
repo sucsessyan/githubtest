@@ -1,0 +1,17 @@
+############################### Banner ################################
+amy:
+  enable : true
+  bg_image_webp : "images/backgrounds/amy-hero2.jpg"
+  bg_image : "images/backgrounds/amy-hero2.jpg"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "FOUNDER"
+  content : "e CEO AMY ERP/CRM"
+  about_item :
+ # themify icon pack : https://themify.me/themify-icons
+     - title : La missione dell' AMY ERP/CRM - liberare le aziende dalla routine finanziaria e contabile. Assumere un ruolo attivo nel coordinare e monitorare l’implementazione dei processi aziendali dell’azienda
+
+  button:
+    enable : true
+    target: "_blank"
+    label : "Per saperne di più"
+    link : "https://erpamy.com"

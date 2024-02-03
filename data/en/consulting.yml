@@ -1,0 +1,32 @@
+############################### Banner ################################
+consulting:
+  enable : true
+  bg_image_webp : "images/backgrounds/hero-area2.jpg"
+  bg_image : "images/backgrounds/hero-area2.jpg"
+  ay_image : "images/ay.png"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "CONSULTANT"
+  content : "in investments, trading and financial analysis since 2016"
+  about_item :
+   - icon : ti-stats-up # themify icon pack : https://themify.me/themify-icons
+     title : I will conduct a qualitative analysis of your investment portfolio
+
+   - icon : ti-bar-chart # themify icon pack : https://themify.me/themify-icons
+     title : Elliott Wave Technical Analysis
+
+   - icon : ti-microphone # themify icon pack : https://themify.me/themify-icons
+     title : DUE DILIGENCE of any public company upon request
+
+   - icon : ti-video-camera # themify icon pack : https://themify.me/themify-icons
+     title : Mentoring and training in trading and investing
+
+  button:
+    enable : false
+    target: ""
+    label : "Leave a request for a consultation"
+    link : "/consulting"
+  button2:
+    enable : false
+    target: ""
+    label : "Take the test What kind of investor are you?"
+    link : "#services"

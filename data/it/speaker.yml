@@ -1,0 +1,11 @@
+############################# call to action ##############################
+speaker:
+  enable : true
+  bg_image : "images/backgrounds/event2.jpg"
+  bg_image_webp : "images/backgrounds/event2.jpg"
+  title : "RELATORE AZIENDALE"
+  content : "Presento programmi su economia, pensiero sugli investimenti, trading e fintech"
+  button:
+    enable : false
+    label : "Invita a parlare"
+    link : "#contact"

@@ -1,0 +1,38 @@
+############################### Banner ################################
+banner:
+  enable : true
+  bg_image_webp : "images/backgrounds/hero-area.jpg"
+  bg_image : "images/backgrounds/hero-area.jpg"
+  monogramma : "images/backgrounds/monogramma.png"
+  ay_image : "images/ay.png"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "Alexey Yanchenko"
+  content : "Financial Analyst, Entrepreneur, IT Developer and Trader"
+  about_item :
+   - icon : ti-blackboard # themify icon pack : https://themify.me/themify-icons
+     title : 3 Educations&#58; Economist, IT Engineer, TV/Movie Director
+
+   - icon : ti-stats-up # themify icon pack : https://themify.me/themify-icons
+     title : Expert in Technical and Financial Analysis 8 years
+
+   - icon : ti-bar-chart # themify icon pack : https://themify.me/themify-icons
+     title : Founder and CEO Amy ERP/CRM
+
+   - icon : ti-microphone # themify icon pack : https://themify.me/themify-icons
+     title : Business speaker
+
+   - icon : ti-video-camera # themify icon pack : https://themify.me/themify-icons
+     title : Author of articles and videos
+
+   - icon : ti-github # themify icon pack : https://themify.me/themify-icons
+     title : Software Developer 17 years
+
+   - icon : ti-medall # themify icon pack : https://themify.me/themify-icons
+     title : ex-CIO / Software Architect 3 years
+
+   - icon : ti-cup # themify icon pack : https://themify.me/themify-icons
+     title : ex-Founder/CEO crypto exchange 1BSE 3 years
+  button:
+    enable : false
+    label : "Leave a request for a consultation"
+    link : "#services"

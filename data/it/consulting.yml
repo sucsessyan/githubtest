@@ -1,0 +1,32 @@
+############################### Banner ################################
+consulting:
+  enable : true
+  bg_image_webp : "images/backgrounds/hero-area2.jpg"
+  bg_image : "images/backgrounds/hero-area2.jpg"
+  ay_image : "images/ay.png"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "CONSULENTE"
+  content : "in investimenti, trading e analisi finanziaria dal 2016"
+  about_item :
+   - icon : ti-stats-up # themify icon pack : https://themify.me/themify-icons
+     title : Condurrò un'analisi qualitativa del tuo portafoglio di investimenti
+
+   - icon : ti-bar-chart # themify icon pack : https://themify.me/themify-icons
+     title : Analisi tecnica degli strumenti di scambio
+
+   - icon : ti-microphone # themify icon pack : https://themify.me/themify-icons
+     title : DUE DILIGENCE di qualsiasi società pubblica su richiesta
+
+   - icon : ti-video-camera # themify icon pack : https://themify.me/themify-icons
+     title : Tutoring e formazione nel trading e negli investimenti
+
+  button:
+    enable : false
+    target: ""
+    label : "Lascia una richiesta di consulenza"
+    link : "/consulting"
+  button2:
+    enable : false
+    target: ""
+    label : "Fai il test Che tipo di investitore sei?"
+    link : "#services"
