@@ -7,17 +7,26 @@ banner:
   ay_image : "images/ay.png"
   icon : "" # themify icon pack : https://themify.me/themify-icons
   title : "Алексей Янченко"
-  content : "Финансовый Аналитик, Предприниматель, IT Девелопер и Трейдер"
+  content : "Финансовый Аналитик, Трейдер, IT Девелопер и Предприниматель"
   about_item :
 
    - icon : ti-blackboard # themify icon pack : https://themify.me/themify-icons
      title : 3 Образования&#58; Экономист, Инженер IT, Режиссер Кино/ТВ
 
    - icon : ti-stats-up # themify icon pack : https://themify.me/themify-icons
-     title : Эксперт по Техническому и Финансовому Анализу 8 лет
+     title : 8 лет в Техническом Анализе и Финансовой Аналитике
 
    - icon : ti-bar-chart # themify icon pack : https://themify.me/themify-icons
      title : Founder и CEO Amy ERP/CRM
+
+   - icon : ti-github # themify icon pack : https://themify.me/themify-icons
+     title : 17 лет в Инновационном IT Девелопменте
+
+   - icon : ti-medall # themify icon pack : https://themify.me/themify-icons
+     title : 3 года в должности CIO / Software Architect
+
+   - icon : ti-cup # themify icon pack : https://themify.me/themify-icons
+     title : Founder/CEO криптобиржи 1BSE с 2013 по 2016
 
    - icon : ti-microphone # themify icon pack : https://themify.me/themify-icons
      title : Бизнес-спикер
@@ -25,14 +34,7 @@ banner:
    - icon : ti-video-camera # themify icon pack : https://themify.me/themify-icons
      title : Автор статей и видео
 
-   - icon : ti-github # themify icon pack : https://themify.me/themify-icons
-     title : Программист, IT разработчик 17 лет
 
-   - icon : ti-medall # themify icon pack : https://themify.me/themify-icons
-     title : ex-CIO / Software Architect 3 года
-
-   - icon : ti-cup # themify icon pack : https://themify.me/themify-icons
-     title : ex-Founder/CEO криптобиржи 1BSE 3 года
 
   button:
     enable : false

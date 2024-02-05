@@ -7,16 +7,25 @@ banner:
   ay_image : "images/ay.png"
   icon : "" # themify icon pack : https://themify.me/themify-icons
   title : "Alexey Yanchenko"
-  content : "Financial Analyst, Entrepreneur, IT Developer and Trader"
+  content : "Financial Analyst, Trader, IT Developer and Entrepreneur"
   about_item :
    - icon : ti-blackboard # themify icon pack : https://themify.me/themify-icons
      title : 3 Educations&#58; Economist, IT Engineer, TV/Movie Director
 
    - icon : ti-stats-up # themify icon pack : https://themify.me/themify-icons
-     title : Expert in Technical and Financial Analysis 8 years
+     title : 8 years in Technical and Financial Analysis
 
    - icon : ti-bar-chart # themify icon pack : https://themify.me/themify-icons
      title : Founder and CEO Amy ERP/CRM
+
+   - icon : ti-github # themify icon pack : https://themify.me/themify-icons
+     title : 17 years in Innovation Software Developer
+
+   - icon : ti-medall # themify icon pack : https://themify.me/themify-icons
+     title : 3 years as CIO / Software Architect
+
+   - icon : ti-cup # themify icon pack : https://themify.me/themify-icons
+     title : Founder/CEO crypto exchange 1BSE from 2013 till 2016
 
    - icon : ti-microphone # themify icon pack : https://themify.me/themify-icons
      title : Business speaker
@@ -24,14 +33,6 @@ banner:
    - icon : ti-video-camera # themify icon pack : https://themify.me/themify-icons
      title : Author of articles and videos
 
-   - icon : ti-github # themify icon pack : https://themify.me/themify-icons
-     title : Software Developer 17 years
-
-   - icon : ti-medall # themify icon pack : https://themify.me/themify-icons
-     title : ex-CIO / Software Architect 3 years
-
-   - icon : ti-cup # themify icon pack : https://themify.me/themify-icons
-     title : ex-Founder/CEO crypto exchange 1BSE 3 years
   button:
     enable : false
     label : "Leave a request for a consultation"
