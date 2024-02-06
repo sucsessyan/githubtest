@@ -3,11 +3,11 @@ amy:
   enable : true
   bg_image_webp : "images/backgrounds/amy-hero2.jpg"
   bg_image : "images/backgrounds/amy-hero2.jpg"
-  icon : "" # themify icon pack : https://themify.me/themify-icons
+  icon : "" 
   title : "FOUNDER"
   content : "и генеральный директор AMY ERP/CRM"
   about_item :
- # themify icon pack : https://themify.me/themify-icons
+
      - title : Миссия AMY ERP/CRM - освободить бизнес от рутины  финансового и бухгалтерского учета. Взять на себя активную роль в согласовании и контроле за выполнением бизнес-процессов компании
 
   button:
