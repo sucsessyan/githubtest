@@ -83,6 +83,8 @@ link = "plugins/shuffle/shuffle.min.js"
 link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
 [[params.plugins.js]]
 link = "plugins/lazy-load/lozad.min.js"
+[[params.plugins.js]]
+link = "plugins/custom/queries.js"
 
 
 
@@ -138,7 +140,7 @@ link = "https://github.com/sucsessyan"
 languageName = "En"
 languageCode = "en-us"
 title = 'Alexey Yanchenko'
-contentDir = "content/english"
+contentDir = "content/en"
 
 [Languages.en.params]
 weight = 1
@@ -151,7 +153,7 @@ copyright = "Copyright &copy; 2024 All rights reserved"
 [Languages.ru]
 languageName = "Ru"
 languageCode = "ru-RU"
-contentDir = "content/russian"
+contentDir = "content/ru"
 title = 'Алексей Янченко'
 weight = 2
 
@@ -166,7 +168,7 @@ copyright = "Copyright &copy; 2024 Все права защищены"
 [Languages.it]
 languageName = "It"
 languageCode = "it-it"
-contentDir = "content/italian"
+contentDir = "content/it"
 title = 'Alexey Yanchenko'
 weight = 3
 
