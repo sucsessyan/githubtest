@@ -1,0 +1,32 @@
+- id: site_title
+  translation: "Alexey Yanchenko"
+- id: page_not_found
+  translation: "Page Not Found"
+- id: back_to_home
+  translation: "Back to home"
+- id: invite
+  translation: "Invite for Consultation"
+- id: close
+  translation: "Close"
+- id: send
+  translation: "Inviare"
+- id: email
+  translation: "Email"
+- id: emailinform
+  translation: Non condivideremo mai la tua email con nessun altro"
+- id: emailinvalid
+  translation: "Inserisci l'e-mail"
+- id: name
+  translation: "Nome"
+- id: nameinvalid
+  translation: "Inserisci un nome"
+- id: phone
+  translation: "Telefono"
+- id: question
+  translation: "La tua domanda/suggerimento"
+- id: questioninvalid
+  translation: "Per favore scrivi la tua domanda"
+- id: successresp
+  translation: "Thank You! Your request was sent!"
+- id: wrongresp
+  translation: "Message was not send. Please try again later"

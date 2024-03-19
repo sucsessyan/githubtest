@@ -1,0 +1,48 @@
+{{"<!-- Modal -->" | safeHTML}}
+<div class="modal fade" id="consultingModal" tabindex="-1" aria-labelledby="consultingModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="consultingModalLabel">{{ i18n "invite" }}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ i18n "close" }}"></button>
+      </div>
+      <div id="smodalmsg" class="alert alert-success" role="alert" hidden>{{ i18n "successresp" }}</div>
+      <div id="wmodalmsg" class="alert alert-danger" role="alert" hidden>{{ i18n "wrongresp" }}</div>
+      <div class="modal-body">
+        <form class="row g-3 needs-validation" novalidate>
+        <div class="mb-3 has-validation">
+    <label for="exampleInputEmail1" class="form-label">{{ i18n "email" }}*</label>
+    <input type="email" class="form-control " id="modalemail" aria-describedby="emailHelp" required>
+    <div id="emailHelp" class="form-text">{{ i18n "emailinform" }}</div>
+    <div class="invalid-feedback">
+          {{ i18n "emailinvalid" }}
+        </div>
+  </div>
+  <div class="mb-3">
+<label for="exampleInputEmail1" class="form-label">{{ i18n "name" }}*</label>
+<input type="text" class="form-control " id="modalname" aria-describedby="emailHelp" required>
+<div class="invalid-feedback">
+      {{ i18n "nameinvalid" }}
+    </div>
+</div>
+<div class="mb-3">
+<label for="exampleInputEmail1" class="form-label">{{ i18n "phone" }}</label>
+<input type="text" class="form-control" id="modalphone" aria-describedby="emailHelp">
+</div>
+  <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">{{ i18n "question" }}*</label>
+  <textarea class="form-control " id="modalqueations" rows="3" required></textarea>
+  <div class="invalid-feedback">
+        {{ i18n "questioninvalid" }}
+  </div>
+</div>
+</form>
+      </div>
+      <div id="ermodalmsg" class="alert alert-danger" role="alert" hidden>Please Fill required fields</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ i18n "close" }}</button>
+        <button type="button" id="modalbutton" class="btn btn-primary">{{ i18n "send" }}</button>
+      </div>
+    </div>
+  </div>
+</div>

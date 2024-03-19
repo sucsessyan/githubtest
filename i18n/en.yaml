@@ -1,0 +1,32 @@
+- id: site_title
+  translation: "Alexey Yanchenko"
+- id: page_not_found
+  translation: "Page Not Found"
+- id: back_to_home
+  translation: "Back to home"
+- id: invite
+  translation: "Invite for Consultation"
+- id: close
+  translation: "Close"
+- id: send
+  translation: "Send"
+- id: email
+  translation: "Email address"
+- id: emailinform
+  translation: "We'll never share your email with anyone else."
+- id: emailinvalid
+  translation: "Please insert Email"
+- id: name
+  translation: "Name"
+- id: nameinvalid
+  translation: "Please insert Name"
+- id: phone
+  translation: "Phone"
+- id: question
+  translation: "Your question / request"
+- id: questioninvalid
+  translation: "Please write your question"
+- id: successresp
+  translation: "Thank You! Your request was sent!"
+- id: wrongresp
+  translation: "Message was not send. Please try again later"

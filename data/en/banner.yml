@@ -1,10 +1,8 @@
 ############################### Banner ################################
 banner:
   enable : true
-  bg_image_webp : "images/backgrounds/hero-area.jpg"
-  bg_image : "images/backgrounds/hero-area.jpg"
-  monogramma : "images/backgrounds/monogramma.png"
-  ay_image : "images/ay.png"
+  bg_image : "/images/background/hero-init.jpg"
+  monogramma : "/images/monogramma.png"
   icon : "" # themify icon pack : https://themify.me/themify-icons
   title : "Alexey Yanchenko"
   content : "Financial Analyst, Trader, IT Developer and Entrepreneur"
@@ -34,6 +32,6 @@ banner:
      title : Author of articles and videos
 
   button:
-    enable : false
-    label : "Leave a request for a consultation"
+    enable : true
+    label : "Request for a consultation"
     link : "#services"

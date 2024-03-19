@@ -1,9 +1,7 @@
 ############################### Banner ################################
 consulting:
   enable : true
-  bg_image_webp : "images/backgrounds/hero-area2.jpg"
-  bg_image : "images/backgrounds/hero-area2.jpg"
-  ay_image : "images/ay.png"
+  bg_image : "/images/background/hero-consulting.jpg"
   icon : "" # themify icon pack : https://themify.me/themify-icons
   title : "CONSULTANT"
   content : "in investments, trading and financial analysis since 2016"
@@ -21,7 +19,7 @@ consulting:
      title : Mentoring and training in trading and investing
 
   button:
-    enable : false
+    enable : true
     target: ""
     label : "Leave a request for a consultation"
     link : "/consulting"

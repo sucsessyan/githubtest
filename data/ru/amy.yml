@@ -1,9 +1,8 @@
 ############################### Banner ################################
 amy:
   enable : true
-  bg_image_webp : "images/backgrounds/amy-hero2.jpg"
-  bg_image : "images/backgrounds/amy-hero2.jpg"
-  icon : "" 
+  bg_image : "/images/background/amy-hero2.jpg"
+  icon : ""
   title : "FOUNDER"
   content : "и генеральный директор AMY ERP/CRM"
   about_item :

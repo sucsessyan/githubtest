@@ -1,0 +1,32 @@
+- id: site_title
+  translation: "Алексей Янченко"
+- id: page_not_found
+  translation: "Страница не найдена"
+- id: back_to_home
+  translation: "Вернуться Домой"
+- id: invite
+  translation: "Пригласить на Консультацию"
+- id: close
+  translation: "Закрыть"
+- id: send
+  translation: "Отправить"
+- id: email
+  translation: "Email"
+- id: emailinform
+  translation: "Мы никогда не передаем ваши личные данные третьим лицам"
+- id: emailinvalid
+  translation: "Пожалуйста введите Email"
+- id: name
+  translation: "Имя"
+- id: nameinvalid
+  translation: "Пожалуйста укажите Имя"
+- id: phone
+  translation: "Телефон"
+- id: question
+  translation: "Ваш вопрос / Предложение"
+- id: questioninvalid
+  translation: "Пожалуйста напишите ваш вопрос"
+- id: successresp
+  translation: "Спасибо! Ваш запрос отправлен!"
+- id: wrongresp
+  translation: "Сообщение не отправлено! Пожалуйста попробуйте позже"

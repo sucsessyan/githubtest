@@ -1,14 +1,13 @@
 ############################### Banner ################################
 bloger:
   enable : true
-  bg_image_webp : "images/backgrounds/bloger.jpg"
-  bg_image : "images/backgrounds/bloger.jpg"
+  bg_image : "/images/background/bloger.jpg"
   icon : "" # themify icon pack : https://themify.me/themify-icons
   title : "АВТОР"
   content : "статей и видео по экономике, трейдингу и инвестициям"
   contentb: "Подписывайтесь на мои Instagram, Telegram и YouTube-каналы, где я рассказываю о трейдинге, экономике, финансах, построению и управлению инвестиционным портфелем. Делюсь техническим анализом, Провожу финансовые эксперименты, Отвечаю на вопросы и разбираю ваши запросы"
   button:
-    enable : false
+    enable : true
     target: "_blank"
     label : "Подписаться в Telegram"
     link : "https://t.me/mralexyanchenko"

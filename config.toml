@@ -1,0 +1,100 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+
+############################# Plugins ##########################
+# css plugins
+[[params.plugins.css]]
+link = "/assets/fontawesome/css/all.css"
+[[params.plugins.css]]
+link = "/assets/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+link = "/assets/bootstrap/dist/css/bootstrap.min.css"
+[[params.plugins.css]]
+link = "/assets/style.css"
+
+
+# js plugins
+[[params.plugins.js]]
+link = "/assets/jquery/jquery.min.js"
+[[params.plugins.js]]
+link = "/assets/bootstrap/dist/js/bootstrap.bundle.min.js"
+[[params.plugins.js]]
+link = "/assets/custom/queries.js"
+
+############################# Default Parameters ##########################
+[params]
+logo = "/images/logo.png"
+# Meta data
+description = ""
+author = ""
+# Google Analytics
+google_analytics_id = "G-FPN40VEX7N" # Your ID
+# post share
+post_share = true
+
+############################# social icons ##########################
+
+
+[[params.social]]
+icon = "fa-brands fa-youtube" # themify icon pack : https://themify.me/themify-icons
+link = "https://www.youtube.com/@finlikbez"
+
+[[params.social]]
+icon = "fa-brands fa-linkedin" # themify icon pack : https://themify.me/themify-icons
+link = "https://www.linkedin.com/in/alexeyyanchenko/"
+
+[[params.social]]
+icon = "fa-brands fa-instagram" # themify icon pack : https://themify.me/themify-icons
+link = "https://instagram.com/mralexyanchenko"
+
+[[params.social]]
+icon = "fa-brands fa-telegram" # themify icon pack : https://themify.me/themify-icons
+link = "https://t.me/mralexyanchenko"
+
+[[params.social]]
+icon = "fa-brands fa-github" # themify icon pack : https://themify.me/themify-icons
+link = "https://github.com/sucsessyan"
+
+################################ English Language ########################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+title = 'Alexey Yanchenko'
+contentDir = "content/en"
+
+[Languages.en.params]
+weight = 1
+home = "Home"
+email = "alex@yanchenko.me"
+copyright = "Copyright &copy; 2024 All rights reserved"
+
+
+################################ Russian Language ########################
+[Languages.ru]
+languageName = "Ru"
+languageCode = "ru-RU"
+contentDir = "content/ru"
+title = 'Алексей Янченко'
+weight = 2
+
+[Languages.ru.params]
+home = "Домой"
+email = "alex@yanchenko.me"
+copyright = "Copyright &copy; 2024 Все права защищены"
+
+
+
+################################ Italian Language ########################
+[Languages.it]
+languageName = "It"
+languageCode = "it-it"
+contentDir = "content/it"
+title = 'Alexey Yanchenko'
+weight = 3
+
+[Languages.it.params]
+home = "Accueil"
+email = "alex@yanchenko.me"
+copyright = "Copyright &copy; 2024 Tutti i diritti riservati "

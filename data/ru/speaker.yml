@@ -1,11 +1,10 @@
 ############################# call to action ##############################
 speaker:
   enable : true
-  bg_image : "images/backgrounds/event2.jpg"
-  bg_image_webp : "images/backgrounds/event2.jpg"
+  bg_image : "/images/background/event2.jpg"
   title : "БИЗНЕС-СПИКЕР"
   content : "Выступаю с программами по экономике, инвестиционному мышлению, трейдингу и финтеху"
   button:
-    enable : false
+    enable : true
     label : "Пригласить выступить"
     link : "#contact"

@@ -1,8 +1,7 @@
 ############################### Banner ################################
 bloger:
   enable : true
-  bg_image_webp : "images/backgrounds/bloger.jpg"
-  bg_image : "images/backgrounds/bloger.jpg"
+  bg_image : "/images/background/bloger.jpg"
   icon : "" # themify icon pack : https://themify.me/themify-icons
   title : "AUTORE"
   content : "articoli e video su economia, commercio e investimenti"

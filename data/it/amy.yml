@@ -1,8 +1,7 @@
 ############################### Banner ################################
 amy:
   enable : true
-  bg_image_webp : "images/backgrounds/amy-hero2.jpg"
-  bg_image : "images/backgrounds/amy-hero2.jpg"
+  bg_image : "/images/background/amy-hero2.jpg"
   icon : "" # themify icon pack : https://themify.me/themify-icons
   title : "FOUNDER"
   content : "e CEO AMY ERP/CRM"

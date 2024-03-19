@@ -1,11 +1,10 @@
 ############################# call to action ##############################
 speaker:
   enable : true
-  bg_image : "images/backgrounds/event2.jpg"
-  bg_image_webp : "images/backgrounds/event2.jpg"
+  bg_image : "/images/background/event2.jpg"
   title : "BUSINESS SPEAKER"
   content : "I present programs on economics, investment thinking, trading and fintech"
   button:
-    enable : false
+    enable : true
     label : "Invite to speak"
     link : "#contact"

@@ -1,10 +1,8 @@
 ############################### Banner ################################
 banner:
   enable : true
-  bg_image_webp : "images/backgrounds/hero-area.jpg"
-  bg_image : "images/backgrounds/hero-area.jpg"
-  monogramma : "images/backgrounds/monogramma.png"
-  ay_image : "images/ay.png"
+  bg_image : "/images/background/hero-init.jpg"
+  monogramma : "/images/monogramma.png"
   icon : "" # themify icon pack : https://themify.me/themify-icons
   title : "Alexey Yanchenko"
   content : "Analista Finanziario, Trader, Sviluppatore IT e  Imprenditore"
@@ -33,6 +31,6 @@ banner:
    - icon : ti-cup # themify icon pack : https://themify.me/themify-icons
      title : ex-Founder/CEO scambio di criptovalute 1BSE 3 anni
   button:
-    enable : false
+    enable : true
     label : "Lascia una richiesta di consulenza"
     link : "#services"
