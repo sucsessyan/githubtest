@@ -1,0 +1,19 @@
+{{ define "header" }}{{ partial "head.html" . }}{{ end }}
+{{ define "main" }}
+{{ with .Params.customcss }}<link rel="stylesheet" href="{{ . }}" />{{ end }}
+{{ with .Params.customjs }}<script src="{{ . }}" ></script>{{ end }}
+{{ partial "navigation.html" . }}
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1">
+          {{ .Title }}
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links {{ $.Param "text_color" | default "mid-gray" }}">
+        {{ .Content }}
+      </div>
+      <div id="msgresponse" class="alert " role="alert" hidden></div>
+    </article>
+  </div>
+{{ end }}

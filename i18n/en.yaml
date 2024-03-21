@@ -30,3 +30,7 @@
   translation: "Thank You! Your request was sent!"
 - id: wrongresp
   translation: "Message was not send. Please try again later"
+- id: amount
+  translation: "Amount (EUR)"
+- id: invocie_number
+  translation: "Invoice Number / Reference"

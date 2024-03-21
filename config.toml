@@ -13,6 +13,8 @@ link = "/assets/themify-icons/themify-icons.css"
 link = "/assets/bootstrap/dist/css/bootstrap.min.css"
 [[params.plugins.css]]
 link = "/assets/style.css"
+#[[params.plugins.css]]
+#link = "/assets/checkout.css"
 
 
 # js plugins
@@ -22,6 +24,10 @@ link = "/assets/jquery/jquery.min.js"
 link = "/assets/bootstrap/dist/js/bootstrap.bundle.min.js"
 [[params.plugins.js]]
 link = "/assets/custom/queries.js"
+[[params.plugins.js]]
+link = "https://js.stripe.com/v3/"
+[[params.plugins.js]]
+link = "/assets/checkout.js"
 
 ############################# Default Parameters ##########################
 [params]
@@ -56,6 +62,26 @@ link = "https://t.me/mralexyanchenko"
 [[params.social]]
 icon = "fa-brands fa-github" # themify icon pack : https://themify.me/themify-icons
 link = "https://github.com/sucsessyan"
+
+################# english navigation Language menu #################
+[[Languages.en.menu.language]]
+name = "English"
+url = "/en"
+post = "flag-icon flag-icon-us"
+weight = 1
+
+[[Languages.en.menu.language]]
+name = "Русский"
+url = "/ru"
+post = "flag-icon flag-icon-ru"
+weight = 2
+
+[[Languages.en.menu.language]]
+name = "Italiano"
+url = "/it"
+post = "flag-icon flag-icon-it"
+weight = 3
+
 
 ################################ English Language ########################
 [Languages.en]
@@ -98,3 +124,22 @@ weight = 3
 home = "Accueil"
 email = "alex@yanchenko.me"
 copyright = "Copyright &copy; 2024 Tutti i diritti riservati "
+
+
+################## english navigation. Main menu #################
+[[Languages.en.menu.main]]
+name = "Payment"
+url = "/payment"
+weight = 1
+
+################## Russian navigation. Main menu #################
+[[Languages.ru.menu.main]]
+name = "Оплатить"
+url = "/payment"
+weight = 1
+
+################## Russian navigation. Main menu #################
+[[Languages.it.menu.main]]
+name = "Pagamento"
+url = "/payment"
+weight = 1

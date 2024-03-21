@@ -1,0 +1,63 @@
+
+{{ define "header" }}{{ partial "head.html" . }}{{ end }}
+{{ define "main" }}
+{{ with .Params.customcss }}<link rel="stylesheet" href="{{ . }}" />{{ end }}
+{{ with .Params.customjs }}<script src="{{ . }}" ></script>{{ end }}
+{{ partial "navigation.html" . }}
+<section class="section ">
+  <div class="container">
+    <h1 class="mt-4">{{ .Title }}</h1>
+    <div class="row p-2" id="prepayment">
+
+        <div class="col">
+      <form class="row g-3 needs-validation" novalidate>
+      <div class="mb-3 has-validation">
+  <label for="exampleInputEmail1" class="form-label">{{ i18n "email" }}*</label>
+  <input type="email" class="form-control " id="paymntemail" aria-describedby="emailHelp" required>
+  <div id="emailHelp" class="form-text">{{ i18n "emailinform" }}</div>
+  <div class="invalid-feedback">
+        {{ i18n "emailinvalid" }}
+      </div>
+</div>
+<div class="mb-3">
+<label for="exampleInputEmail1" class="form-label">{{ i18n "name" }}*</label>
+<input type="text" class="form-control " id="paymentname" aria-describedby="emailHelp" required>
+<div class="invalid-feedback">
+    {{ i18n "nameinvalid" }}
+  </div>
+</div>
+<div class="mb-3">
+<label for="exampleInputEmail1" class="form-label">{{ i18n "invocie_number" }}</label>
+<input type="text" class="form-control" id="paymentreference" aria-describedby="emailHelp">
+</div>
+<div class="mb-3">
+<label for="exampleInputEmail1" class="form-label ">{{ i18n "amount" }}</label>
+<input type="number" min="0.00" step="0.05" value="1.00"  class="form-control " id="paymentamount" aria-describedby="emailHelp">
+</div>
+<button type="button" id="paybutton" class="btn btn-primary">{{ i18n "send" }}</button>
+</form>
+  </div>
+
+    </div>
+    <div class="row" id="stripecard" hidden>
+      <div class="col-12 text-center">
+
+
+        {{"<!-- Display a payment form -->" | safeHTML}}
+        <form id="payment-form">
+          <div id="payment-element">
+
+          {{"<!--Stripe.js injects the Payment Element-->" | safeHTML}}
+          </div>
+          <button id="submit">
+            <div class="spinner hidden" id="spinner"></div>
+            <span id="button-text">Pay now</span>
+          </button>
+          <div id="payment-message" class="hidden"></div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -30,3 +30,7 @@
   translation: "Спасибо! Ваш запрос отправлен!"
 - id: wrongresp
   translation: "Сообщение не отправлено! Пожалуйста попробуйте позже"
+- id: amount
+  translation: "Сумма (EUR)"
+- id: invocie_number
+  translation: "Назначение платежа"

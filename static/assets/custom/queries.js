@@ -32,8 +32,46 @@ $("#requestlifehacks").click(async function(event){
 */
     });
 
+$("#paybutton").click(async function(event){
+          event.preventDefault();
 
 
+          name  = $("#paymentname").val();
+          reference = $("#paymentreference").val();
+          activityid  = "q3adsgerysdfv";
+          email = $("#paymntemail").val();
+          paymentamount = $("#paymentamount").val();
+
+          if (paymentamount == "" || reference == "" || name == "" || email == "") {
+
+          $('#ermodalmsg').attr("hidden", false);
+
+
+        } else {
+
+          //get key
+          const response = await fetch("https://my.yanchenko.me/api/v3/payments/stripe/getkey", {
+            method: "GET",
+            headers: { "Content-Type": "application/json" },
+          });
+          var  jsonresp  = await response.json();
+          var key = jsonresp.data.key;
+
+          var items =
+           {
+             name: name,
+             reference: reference,
+             activityid: activityid,
+             email: email,
+             amount: paymentamount,
+           };
+
+           $('#prepayment').attr("hidden", true);
+           $('#stripecard').attr("hidden", false);
+          startstripe(items, key);
+        }
+
+      });
 
 function requestfile(args) {
       var jsonreq = JSON.stringify(args);
@@ -51,7 +89,7 @@ function requestfile(args) {
 
     }
 
-    function message(args) {
+function message(args) {
           var jsonreq = JSON.stringify(args);
            console.log("jsonreq: ", jsonreq)
 
@@ -67,7 +105,7 @@ function requestfile(args) {
 
         }
 
-    $("#modalbutton").click(async function(event){
+$("#modalbutton").click(async function(event){
           event.preventDefault();
           console.log("I clicked");
           $('#wmodalmsg').attr("hidden", true);

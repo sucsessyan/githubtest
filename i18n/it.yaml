@@ -13,7 +13,7 @@
 - id: email
   translation: "Email"
 - id: emailinform
-  translation: Non condivideremo mai la tua email con nessun altro"
+  translation: "Non condivideremo mai la tua email con nessun altro"
 - id: emailinvalid
   translation: "Inserisci l'e-mail"
 - id: name
@@ -30,3 +30,7 @@
   translation: "Thank You! Your request was sent!"
 - id: wrongresp
   translation: "Message was not send. Please try again later"
+- id: amount
+  translation: "Amount (EUR)"
+- id: invocie_number
+  translation: "Invoice Number / Reference"
