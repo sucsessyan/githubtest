@@ -33,13 +33,9 @@
   </select>
   {{ end }}
 
-  <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-
+    <div  >
+      <ul class="navbar-nav mr-auto">
         {{ $currentPage := . }}
         {{ range site.Menus.main }}
         {{ $menuURL := .URL | absLangURL }}
