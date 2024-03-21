@@ -24,7 +24,7 @@ document
 
 // Fetches a payment intent and captures the client secret
 async function initialize(items, stripe) {
-
+setLoading(true);
   const response = await fetch("https://my.yanchenko.me/api/v3/payments/stripe/intent", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -46,6 +46,7 @@ async function initialize(items, stripe) {
 
   const paymentElement = elements.create("payment", paymentElementOptions);
   paymentElement.mount("#payment-element");
+  setLoading(false);
 }
 
 async function handleSubmit(e) {
@@ -119,14 +120,11 @@ function showMessage(messageText) {
 
 // Show a spinner on payment submission
 function setLoading(isLoading) {
-  if (isLoading) {
+  if (!isLoading) {
     // Disable the button and show a spinner
-    document.querySelector("#submit").disabled = true;
-    document.querySelector("#spinner").classList.remove("hidden");
-    document.querySelector("#button-text").classList.add("hidden");
-  } else {
     document.querySelector("#submit").disabled = false;
-    document.querySelector("#spinner").classList.add("hidden");
-    document.querySelector("#button-text").classList.remove("hidden");
+    document.querySelector("#spintr").classList.add("hidden");
+    ocument.querySelector("#button-text").classList.remove("hidden");
+    document.querySelector("#button-text").classList.add("visible");
   }
 }
