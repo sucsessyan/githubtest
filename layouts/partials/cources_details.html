@@ -1,0 +1,30 @@
+{{ with .Params.customcss }}<link rel="stylesheet" href="{{ . }}" />{{ end }}
+{{ with .Params.customjs }}<script src="{{ . }}" ></script>{{ end }}
+{{ partial "navigation.html" . }}
+<div class="container mt-2">
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      {{ with  .Params.breadcrumb }}
+      {{ range . }}
+      <li class="breadcrumb-item">  {{if .islink }}  <a href="{{.url}}" class="text-white">{{ .name}}</a>{{else}}
+      {{ .name}}
+      {{end}}
+      </li>
+      {{end}}
+      {{end}}
+    </ol>
+  </nav>
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1 text-white">
+          {{ .Title }}
+        </h1>
+      </header>
+      <div id="msgresponse" class="alert " role="alert" hidden></div>
+    </article>
+<div class="text-white">
+{{- .Content -}}
+</div>
+    </div>
+  </div>

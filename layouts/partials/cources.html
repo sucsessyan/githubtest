@@ -1,0 +1,53 @@
+{{ with .Params.customcss }}<link rel="stylesheet" href="{{ . }}" />{{ end }}
+{{ with .Params.customjs }}<script src="{{ . }}" ></script>{{ end }}
+{{ partial "navigation.html" . }}
+<div class="container mt-2">
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      {{ with  .Params.breadcrumb }}
+      {{ range . }}
+      <li class="breadcrumb-item">  {{if .islink }}  <a href="{{.url}}" class="text-white">{{ .name}}</a>{{else}}
+      {{ .name}}
+      {{end}}
+      </li>
+      {{end}}
+      {{end}}
+    </ol>
+  </nav>
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1">
+          {{ .Title }}
+        </h1>
+      </header>
+      <div id="msgresponse" class="alert " role="alert" hidden></div>
+    </article>
+
+{{ with  .Params.cources }}
+{{ range . }}
+{{if not .draft }}
+    <div class="col m-2">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col-auto d-none d-lg-block">
+          {{if .image }}
+          <img src="{{ .image }}" width="200"  class="img" alt="{{ .Title }}">
+          {{else}}
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+         {{ end }}
+        </div>
+       <div class="col p-4 d-flex flex-column position-static ">
+         <strong class="d-inline-block mb-2 {{.label_color}}">{{.label}}</strong>
+         <h3 class="mb-0 text-white">{{.name}}</h3>
+         <div class="mb-1 text-muted">{{.start_date}}</div>
+         <p class="card-text mb-auto text-white">{{.description}}</p>
+         <a href="{{.link}}" class="stretched-link text-white">Подробнее</a>
+       </div>
+     </div>
+    </div>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+
+    </div>
+  </div>

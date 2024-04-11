@@ -147,3 +147,57 @@ $("#modalbutton").click(async function(event){
 
     */
         });
+
+loader();
+
+function loader() {
+  var path = getpagepath();
+  switch(path) {
+    case "/payment/":
+              loadpaymentpage()
+    break;
+  }
+
+}
+
+function loadpaymentpage() {
+  if (GetUrlParameter("amount") != "") {
+    $("#paymentamount").val(GetUrlParameter("amount"));
+    $("#paymentamount").prop("readonly",true);
+  }
+  if (GetUrlParameter("name") != "") {
+    $("#paymentreference").val(GetUrlParameter("name"));
+    $("#paymentreference").prop("readonly",true);
+  }
+}
+
+function getpagepath() {
+	var path = window.location.pathname;
+ var pathar = [];
+ pathar = path.split('/');
+ var a = pathar[1]; // lang
+ var b = pathar[2]; // path
+ var c = "";
+ if (a == "it" || a == "en" || a == "ru") {
+	 if (b.length === 0) {
+		 b = "/";
+	 }
+   var str = path.slice(1); //remove first /
+   str = str.replace(a,'');
+	 c = str;
+ } else {
+	 if (a.length === 0) {
+		 a = "/";
+	 }
+
+	 c = path;
+ }
+ return c;
+}
+
+function GetUrlParameter(sParam) {
+  var queryString = window.location.search;
+  var urlParams = new URLSearchParams(queryString);
+    var param = urlParams.get(sParam);
+    return param;
+  }

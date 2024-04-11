@@ -1,4 +1,4 @@
-console.log("Check Payment");
+
 checkpayment();
 
 

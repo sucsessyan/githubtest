@@ -128,17 +128,34 @@ copyright = "Copyright &copy; 2024 Tutti i diritti riservati "
 
 ################## english navigation. Main menu #################
 [[Languages.en.menu.main]]
+name = "Trainings"
+url = "/ru/cources"
+weight = 1
+
+[[Languages.en.menu.main]]
 name = "Payment"
 url = "/payment"
-weight = 1
+weight = 2
+
 
 ################## Russian navigation. Main menu #################
 [[Languages.ru.menu.main]]
-name = "Оплатить"
-url = "/payment"
+name = "Обучение"
+url = "/cources"
 weight = 1
 
+[[Languages.ru.menu.main]]
+name = "Оплатить"
+url = "/payment"
+weight = 2
+
 ################## Russian navigation. Main menu #################
+[[Languages.it.menu.main]]
+name = "Corsi"
+url = "/cources"
+weight = 1
+
+
 [[Languages.it.menu.main]]
 name = "Pagamento"
 url = "/payment"

@@ -1,5 +1,7 @@
 {{ define "main" }}
-
+{{ if .Params.layout}}
+{{ partial .Params.layout . }}
+{{else}}
 {{ partial "default.html" . }}
-
+{{ end }}
 {{ end }}
