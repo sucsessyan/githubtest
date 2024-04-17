@@ -1,7 +1,8 @@
 {{ $data := index site.Data site.Language.Lang }}
 {{ if $data.banner.banner.enable }}
 {{ with $data.banner.banner }}
-<div class="p-5 text-center bg-image vh-100" style="background-image: url('{{ .bg_image | absURL }}'); background-position: -200px -50px;">
+<section>
+<div class="p-5 text-center bg-image" style="background-image: url('{{ .bg_image | absURL }}'); background-position: -200px -50px;">
   <div class="d-block d-sm-none">
     {{"<!-- Smartphone  View -->" | safeHTML}}
     <div class="container">
@@ -15,7 +16,7 @@
       <p class="  mb-4 text-white ">{{ .content | markdownify }}</p>
 
 </div>
-  <div class="row pt-4">
+  <div class="row ">
       <div class="col">
       <div class="social-icon-sm float-end">
       <ul>
@@ -146,6 +147,6 @@
 
 
 </div>
-
+</section>
 {{end}}
 {{end}}

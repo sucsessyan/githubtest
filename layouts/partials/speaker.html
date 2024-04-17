@@ -1,11 +1,9 @@
 {{ $data := index site.Data site.Language.Lang }}
 {{ if $data.speaker.speaker.enable}}
 {{ with $data.speaker.speaker}}
-<div class="call-to-action section-sm bg-1 overly" style="background-image: url('{{ .bg_image | absURL }}'); background-size: cover;">
+<section>
+<div class="call-to-action section-sm bg-1 overly" style="background-image: url('{{ .bg_image | absURL }}'); background-size: cover; min-height: 450px;">
 <div class="container">
-<div class="row p-4"></div>
-<div class="row p-4"></div>
-<div class="row p-4"></div>
 <div class="row p-4"></div>
   <div class="row p2">
     <div class="col text-start">
@@ -27,5 +25,6 @@
   </div>
   </div>
 </div>
+</section>
 {{end}}
 {{end}}

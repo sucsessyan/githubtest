@@ -21,7 +21,7 @@ consulting:
   button:
     enable : true
     target: ""
-    label : "Lascia una richiesta di consulenza"
+    label : "Richiesta di consulenza"
     link : "/consulting"
   button2:
     enable : false

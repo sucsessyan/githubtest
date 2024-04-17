@@ -1,12 +1,9 @@
 {{ $data := index site.Data site.Language.Lang }}
 {{ if $data.bloger.bloger.enable }}
 {{ with $data.bloger.bloger }}
-<div class="p-5 text-center bg-image vh-100" style="background-image: url('{{ .bg_image | absURL }}'); background-size: cover;">
+<section>
+<div class="p-5 text-center bg-image " style="background-image: url('{{ .bg_image | absURL }}'); background-size: cover; min-height: 650px;">
 <div class="container">
-<div class="row p-4"></div>
-<div class="row p-4"></div>
-<div class="row p-4"></div>
-<div class="row p-4"></div>
   <div class="row p2">
     <div class="col text-start">
       <h1 class="text-white">{{ .title | markdownify }}</h1>
@@ -16,6 +13,9 @@
   		</div>
 
     </div>
+    <div class="col">
+      </div>
+      </div>
     <div style="row p4 mt text-start" >
       <div class="col  text-start" style="margin-top:10px;">
         {{ if .button.enable }}
@@ -25,17 +25,14 @@
     		{{ end }}
     		{{ if .button2.enable }}
     		{{ with .button2 }}
+        <div class="d-block d-sm-none" style="margin-top: 1rem;"></div>
     		<a href="{{ .link }}" target="{{ .target }}"  class="btn btn-primary btn-lg px-4 gap-3 fs-6 text-nowrap">{{ .label }}</a>
     		{{ end }}
     		{{ end }}
         </div>
     		</div>
-    <div class="col">
-    </div>
-    <div class="col">
-    </div>
-  </div>
   </div>
 </div>
+</section>
 {{end}}
 {{end}}

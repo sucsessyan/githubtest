@@ -21,3 +21,4 @@ menu:
   main:
     weight: 1
 ```
+https://online.itmo.ru/all-courses/course-crypto#rec648475419

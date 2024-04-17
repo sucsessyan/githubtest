@@ -1,12 +1,9 @@
 {{ $data := index site.Data site.Language.Lang }}
 {{ if $data.consulting.consulting.enable }}
 {{ with $data.consulting.consulting }}
-<div class="p-5 text-center bg-image vh-100" style="background-image: url('{{ .bg_image | absURL }}'); background-size: cover;">
+<section>
+<div class="p-5 text-center bg-image" style="background-image: url('{{ .bg_image | absURL }}'); background-size: cover; min-height: 650px;">
 <div class="container">
-<div class="row p-4"></div>
-<div class="row p-4"></div>
-<div class="row p-4"></div>
-<div class="row p-4"></div>
   <div class="row p2">
     <div class="col text-start">
       <h1 class="text-white">{{ .title | markdownify }}</h1>
@@ -36,5 +33,6 @@
   </div>
   </div>
 </div>
+</section>
 {{end}}
 {{end}}
